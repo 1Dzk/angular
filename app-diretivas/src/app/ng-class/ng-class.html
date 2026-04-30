@@ -1,0 +1,9 @@
+<div [ngClass]="valor ? 'preto' : 'amarelo'" class="p-3 text-white mb-3">
+  A cor atual depende da variável "valor"
+</div>
+<button 
+  class="btn" 
+  [ngClass]="{'btn-success': valor, 'btn-danger': !valor}"
+  (click)="alternarCor()">
+  Clique para mudar meu estilo
+</button>
