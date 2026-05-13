@@ -1,1 +1,20 @@
-<p>p-pipes works!</p>
+<h3>Pipe para Data</h3>
+<p>Sem: {{ data}}</p>
+<p>Com: {{ data | date: 'dd/MM/yyyy' }}</p>
+<hr>
+
+<h3>Pipe para Texto</h3>
+<p>Normal: {{nome}}</p>
+<p>Maiuscula: {{nome | uppercase}}</p>
+<p>Minúscula: {{nome | lowercase}}</p>
+<hr>
+
+<h3>Pipe para Valor </h3>
+<p>Normal: {{valor}}</p>
+<p>Real: {{valor | currency : 'BRL' }}</p>
+<hr>
+
+<h3>Pipe propria (inverter uma string)</h3>
+<input type="text" [(ngModel)]="palavra">
+{{palavra | inverte}}
+
