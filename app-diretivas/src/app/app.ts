@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Menu } from './menu/menu';
-import { CpPai } from './modulo-teste-2/cp-pai/cp-pai';
+import { CpAgrupador } from './md-service/cp-agrupador/cp-agrupador';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu, CpPai],
+  imports: [RouterOutlet, Menu,CpAgrupador],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
