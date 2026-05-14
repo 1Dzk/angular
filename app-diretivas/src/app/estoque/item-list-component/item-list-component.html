@@ -1,0 +1,26 @@
+<table class="table table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Nome</th>
+      <th>Estoque</th>
+      <th>Qtd. Lote</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of itens(); track item.id) {
+      <tr>
+        <td>{{ item.nome }}</td>
+        <td><span class="badge bg-info">{{ item.quantidade }}</span></td>
+        <td>
+          <input type="number" #v value="1" min="1" class="form-control form-control-sm" style="width: 70px;">
+        </td>
+        <td>
+          <button class="btn btn-outline-success btn-sm me-1" (click)="movimentar(item.id, v.value, 'entrada')">+ In</button>
+          <button class="btn btn-outline-warning btn-sm me-1" (click)="movimentar(item.id, v.value, 'saida')">- Out</button>
+          <button class="btn btn-danger btn-sm" (click)="excluir(item.id)">Excluir</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

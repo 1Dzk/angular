@@ -1,0 +1,20 @@
+<div class="card shadow-sm border-0">
+  <div class="card-header bg-primary text-white">
+    <h5 class="mb-0">Cadastrar Novo Produto</h5>
+  </div>
+  <div class="card-body">
+    <form (submit)="salvar($event)">
+      <div class="mb-3">
+        <label class="form-label fw-bold">Nome do Item</label>
+        <input type="text" class="form-control" [(ngModel)]="nome" name="nome" placeholder="Ex: Teclado Mecânico" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-bold">Quantidade Inicial</label>
+        <input type="number" class="form-control" [(ngModel)]="quantidade" name="quantidade" min="0" required>
+      </div>
+      <button type="submit" class="btn btn-success w-100 shadow-sm">
+        <i class="bi bi-plus-circle me-2"></i>Cadastrar no Sistema
+      </button>
+    </form>
+  </div>
+</div>

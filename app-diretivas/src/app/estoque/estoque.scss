@@ -1,0 +1,79 @@
+.estoque-container {
+  padding: 30px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    padding: 15px;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #f1f5f9;
+  }
+
+  td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+  }
+}
+.input-lote {
+  width: 70px;
+  padding: 8px;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  color: #2563eb;
+}
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-right: 6px;
+  &.btn-in {
+    background: #dcfce7;
+    color: #16a34a;
+    &:hover {
+      background: #bbf7d0;
+    }
+  }
+  &.btn-out {
+    background: #fee2e2;
+    color: #dc2626;
+    &:hover {
+      background: #fecaca;
+    }
+  }
+  &.btn-del {
+    background: #f1f5f9;
+    color: #64748b;
+    &:hover {
+      background: #e2e8f0;
+    }
+  }
+}
+input {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  border-radius: 6px;
+  &:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+}

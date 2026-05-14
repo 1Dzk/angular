@@ -9,12 +9,13 @@ import { CpPai } from './modulo-teste/cp-pai/cp-pai';
 import { UserProfile } from './comunicacao-componentes/user-profile/user-profile';
 import { Navbar } from './comunicacao-componentes/navbar/navbar';
 import { LoginForm } from './comunicacao-componentes/login-form/login-form';
+import { Estoque } from './estoque/estoque';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu,CpAgrupador,TaskList,ProductList,CpFilho,CpPai,CpFilho,UserProfile,LoginForm,Navbar],
+  imports: [RouterOutlet, Menu,CpAgrupador,TaskList,ProductList,CpFilho,CpPai,UserProfile,LoginForm,Navbar,Estoque],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
