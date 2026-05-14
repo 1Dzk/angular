@@ -1,0 +1,10 @@
+<div *ngIf="produto" style="border: 1px solid #ccc; padding: 15px; margin-top: 20px; border-radius: 8px;">
+  <h3>Detalhes do Produto</h3>
+  <p><strong>Nome:</strong> {{ produto.nome }}</p>
+  <p><strong>Preço:</strong> {{ produto.preco | currency:'BRL' }}</p>
+  <p><strong>Categoria:</strong> {{ produto.categoria }}</p>
+</div>
+
+<div *ngIf="!produto">
+  <p>Selecione um produto para ver os detalhes.</p>
+</div>

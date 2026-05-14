@@ -1,0 +1,9 @@
+<h2>Lista de Produtos</h2>
+
+<ul>
+  <li *ngFor="let p of produtos" (click)="selecionarProduto(p)" style="cursor: pointer; color: blue;">
+    {{ p.nome }}
+  </li>
+</ul>
+
+<app-product-card [produto]="produtoSelecionado"></app-product-card>
