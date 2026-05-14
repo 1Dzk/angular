@@ -1,14 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Menu } from './menu/menu';
-import { CpAgrupador } from './md-service/cp-agrupador/cp-agrupador';
-import { ProductList } from './loja/product-list/product-list';
+import { TaskList } from './tarefas/task-list/task-list';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Menu,ProductList],
+  imports: [RouterOutlet, Menu,TaskList],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
